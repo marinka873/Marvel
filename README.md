@@ -1,2 +1,1 @@
-# Marvel
-Landing page
+Marvel landing page
