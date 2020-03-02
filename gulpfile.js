@@ -6,8 +6,7 @@ let uglify = require('gulp-uglify');
 let del = require('del');
 let browserSync = require('browser-sync').create();
 let sass = require('gulp-sass');
-
-sass.compiler = require('node-sass');
+let sassImages = require('gulp-sass-image');
 
 const cssFiles = [
    './styles/main.scss',
