@@ -1,0 +1,97 @@
+@import '_reset.scss';
+
+
+/* alata-regular - latin */
+@font-face {
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Alata Regular'), local('Alata-Regular'),
+         url('../fonts/alata-v1-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/alata-v1-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* poppins-regular - latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'),
+         url('../fonts/poppins-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/poppins-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+$font-content: Poppins;
+
+  html{
+      box-sizing: border-box;
+  }
+  *,*::before, *::after{
+      box-sizing: inherit;
+  }
+  
+  body{
+      font-family: $font-content;
+      font-style: normal;
+      font-weight: 300px;
+      font-size: 18px;
+      line-height: 26px;
+      color:  #0B0D21;
+  }
+.main__content{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.header{
+    position: fixed;
+    left: 0px;
+    top: 40px;
+    width: 100%;
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header__navbar_menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar__menu__item{
+    margin-right: 66px;
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+.navbar__menu__link{
+    line-height: 18px;
+    color: #000000;
+    text-decoration: none;
+    &:hover{
+        color: #F6D330;
+    };
+}
+h2 {
+    font-family: Alata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    text-align: center;
+    color:#000000;
+}
+
+.content-banner{
+    position: absolute;
+    width: 100vh;
+    background: url(../image/content-banner.jpg) no-repeat center;
+    background-size: cover;
+}
+p{
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+body{
+    background: #F2F2F2;
+}
