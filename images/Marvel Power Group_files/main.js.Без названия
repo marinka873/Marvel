@@ -1,0 +1,49 @@
+
+let $navbar = document.getElementsByClassName('.header__wrapper');
+let $navSlideLine = document.getElementsByClassName('.navbar__slide__line');
+let $navbarItem = document.getElementsByClassName('.navbar__menu__item');
+let header__burger__menu = document.getElementsByClassName('header__burger__menu');
+let header__burger__menu__line = document.getElementsByClassName('header__burger__menu__line');
+
+(function($){  
+    if ($navbarItem[0]) {
+      $navSlideLine.css({
+        "width": $navbarItem.width(),
+        "left": $navbarItem.position().left
+      });
+    }
+
+    ($navbar).find("li").hover(
+      function(){
+        $navSlideLine.css({
+          "width": (this).width(),
+          "left": (this).position().left
+        });
+      },
+      function(){
+        if ($navbarItem[0]) {
+          $navSlideLine.css({
+            "width": $navbarItem.width(),
+            "left": $navbarItem.position().left
+          });
+        } else {
+          $navbarItem.width(0);
+        }
+      }
+     );
+  })($jQuery);
+
+
+
+  document.onscroll = function () {
+    let position = window.scrollY || document.documentElement.scrollTop;
+
+    if (position <= 50) {
+      header.classList.remove('scroll');
+    } else {
+      header.classList.add('scroll');
+    }
+  
+    activateColor(position);
+    activateLinks(position);
+  }

@@ -7,80 +7,260 @@
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     </head>
-
     <body>
-            <div class="header">
-                <header class="header__menu">
-                    <div class="main__content">
-                        <div class="header__wrapper">
-                            <div class="header__logo">
-                                <a class="header__logo__link" href="/">
-                                    <img src="./image/logo_Marvel.svg" alt="Marvel Power Group">
-                                </a>
-                            </div>
+         <div class="header">
+             <header class="header__menu">
+                <div class="main__content">
+                    <div class="header__wrapper">
+                        <div class="header__logo">
+                            <a class="header__logo__link" href="#home">
+                                <img src="./images/logo_Marvel.svg" alt="Marvel Power Group">
+                            </a>
+                        </div>
                             <nav class="header__navbar">
                                 <ul class="header__navbar_menu">
-                                    <li class="navbar__menu__item">
-                                        <a  class="navbar__menu__link" href="#">About</a>  
+                                    <li class="navbar__menu__item ">
+                                        <a  class="navbar__menu__link" href="#about">About</a>  
                                     </li>
                                     <li class="navbar__menu__item">
-                                        <a class="navbar__menu__link" href="#">Services</a>   
+                                        <a class="navbar__menu__link" href="#services">Services</a>   
                                     </li>
                                     <li class="navbar__menu__item">
-                                        <a class="navbar__menu__link" href="#">Contact</a>   
+                                        <a class="navbar__menu__link" href="#contact">Contact</a>   
                                     </li>
                                 </ul>
                             </nav>
+                            <div class="header__burger__menu">
+                                    <span class="header__burger__menu__line"></span>
+                                    <span class="header__burger__menu__line"></span>
+                            </div>
+                           
                         </div>
                      </div>
                 </header>
             </div>
-
-            
-            <main class="main__content">
-                <section class="content__banner">
-                    <div class="main__content">
+            <main>
+                <section class="content__banner" id="home">
+                    <div class="content__banner__wrap">
                         <h1 class="content__banner__title">
                             Marvel Power Group
                         </h1>
                         <p class="content__banner__discription">Marvel Power Group is a boutique consulting firm with a fresh,
                              markets-based approach to value creation. We offer services to clients in energy,
                              water, manufacturing and transportation sectors.</p>
-                             <a class="content__banner__button" href="#">contact us</a>
-                             <p class="content__banner__scroll">Scroll for more</p>
-                    </div> 
-                </section>
-                    
-                 <section class="container__about">
-                    <div class="containter__about__wrapper">
-                        <h2 class="">About Us</h2>
-                        <div class="container__about_title_underline">
+                             <a class="content__banner__button" href="#">
+                                 contact us
+                                <img src="./images/banner_button.svg">
+                            </a>
+                            <div class="content__banner__line">
 
-                        </div>
-                        <div class="container__about__flex">
-                            <img class="container__about__image" src="./image/city.jpg" alt="Marvel Power Group">
-                            <p class="container__about__description">
-                                Our dynamic, solutions-oriented team brings decades 
-                                of relevant transactional, analytical and regulatory 
-                                experience to supporting our clients’ unique agendas. 
-    
-                                We are experienced practitioners who have run companies,
-                                successfully originated and closed complex deals, advocated
-                                and negotiated favorable policy and advanced technologiscal 
-                                innovation and climate leadership. 
-    
-                                We specialize in structuring balanced solutions for all 
-                                affected stakeholders and uncovering economic opportunities 
-                                in otherwise opaque environments.
-                            </p>
-                        </div>
-                           
+                            </div>
+                             <p class="content__banner__scroll">Scroll for more</p>
                     </div>
                 </section> 
+                 <section class="container__about" id="about">
+                     <div class="container__about__wrapper">
+                        <h2 class="container__about_title">About Us</h2>
+                        <div class="container__about_title_underline">
+                        </div>
+                        <div class="container__about__flex">
+                            <img class="container__about__image" src="./images/city.jpg" alt="Marvel Power Group">
+                            <div class="container__about__description">
+                                <p class="container__about__description__item">
+                                    Our dynamic, solutions-oriented team brings decades 
+                                    of relevant transactional, analytical and regulatory 
+                                    experience to supporting our clients’ unique agendas. </p>
+                                   <p class="container__about__description__item2"> We are experienced practitioners who have run companies,
+                                    successfully originated and closed complex deals, advocated
+                                    and negotiated favorable policy and advanced technologiscal 
+                                    innovation and climate leadership. </p>
+                                    <p class="container__about__description__item3">We specialize in structuring balanced solutions for all 
+                                        affected stakeholders and uncovering economic opportunities 
+                                        in otherwise opaque environments.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+                <section class="container__services" id="services">
+                    <div class="container__services__wrap">
+                        <h2 class="container__services_title">Services</h2>
+                        <div class="container__services_underline">
+                        </div>
+                        <p class="container__services__description">
+                            Our clients are at the forefront of energy transition and innovation.
+                            Their task is complex: balance reliability and cost effectiveness with
+                            new customer demands, investment decisions, decarbonization goals and
+                            an evolving menu of new technologies. We understand the task and bring
+                            deep expertise to addressing these challenges.
+                         </p>
+                         <div class="container__services__group">
+                            <div class="container__services__group__title">
+                                <h3 class="container__services__box__title">
+                                    Enterprise Strategy
+                                 </h3>
+                            </div>
+                            <div class="container__services__group__title1">
+                                <h3 class="container__services__box__title title__sevices">
+                                    Wholesale Power 
+                                 </h3>
+                            </div>
+                            <div class="container__services__group__title2">
+                                <h3 class="container__services__box__title">
+                                    Market Development
+                                </h3>
+                             </div>
+                            
+                            <div class="container__services__box1">
+                                 <ul class="container__services__list">
+                                    <li class="container__services__list__item">
+                                        <span class="container__services__list__description">
+                                            Procurement and investment diligence
+                                        </span>
+                                    </li>
+                                    <li class="container__services__list__item">
+                                        <span class="container__services__list__description">
+                                            Customer engagement and retention
+                                        </span>
+                                    </li>
+                                    <li class="container__services__list__item">
+                                        <span class="container__services__list__description">
+                                            Renewable, DER, and EV program structuring
+                                        </span>
+                                    </li>
+                                    <li class="container__services__list__item">
+                                        <span class="container__services__list__description">
+                                            Reliability planning and reporting
+                                        </span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="container__services__button" ></a>
+                             </div>
+                            
+                             <div class="container__services__box2">  
+                                 <ul class="container__services__list">
+                                     <li class="container__services__list__item">
+                                         <span class="container__services__list__description">
+                                            Commodity advisory and RFPs
+                                         </span>
+                                     </li>
+                                     <li class="container__services__list__item">
+                                         <span class="container__services__list__description">
+                                            Energy, capacity, REC, RIN, and LCFS placement
+                                         </span>
+                                     </li>
+                                     <li class="container__services__list__item">
+                                         <span class="container__services__list__description">
+                                            Enterprise PPA structuring
+                                         </span>
+                                     </li>
+                                     <li class="container__services__list__item">
+                                         <span class="container__services__list__description">
+                                            Contract extensions and re-packaging
+                                         </span>
+                                     </li>
+                                 </ul>
+                                 <a href="#" class="container__services__button"></a>
+                             </div>
+                            
+                             <div class="container__services__box3">
+                                <ul class="container__services__list">
+                                    <li class="container__services__list__item">
+                                        <span class="container__services__list__description">
+                                            New venture setup
+                                        </span>
+                                    </li>
+                                    <li class="container__services__list__item">
+                                        <span class="container__services__list__description">
+                                            Demand planning and acquisition
+                                        </span>
+                                    </li>
+                                    <li class="container__services__list__item">
+                                        <span class="container__services__list__description">
+                                            Project development and regulatory support
+                                        </span>
+                                    </li>
+                                    <li class="container__services__list__item">
+                                        <span class="container__services__list__description">
+                                            Partnership structuring
+                                        </span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="container__services__button" > </a>
+                            </div>
+                         </div>
+                        <p class="container__services__description container__services__description__bottom">
+                            Our clients are time constrained and under-resourced. Agendas shift,
+                            budgets move and priorities change. We understand. We are agile, creative
+                            and immediately responsive to your various working styles, governance requirements and evolving needs. 
+                        </p>
+                    </div>
+                </section> 
+                <section class="container__contact" id="contact">
+                    <div class="container__contact__wrap">
+                            <h2 class="container__contact__title">Contact</h2>
+                            <div class="container__contact__title__underline">
+                            </div>
+                            <h3 class="container__contact__description">
+                                Stay in the loop 
+                                by getting on
+                                our mailing list</h3>       
+                                <div class="container__contact__info">
+                                    <h3 class="container__contact__info__text">Email us here:</h3>
+                                    <h3 class="container__contact__info__text_color">info@marvelpowergroup.com</h3>
+                                </div>
+                        <form class="form__login">
+                            <input  class="form__login__input" type="text" placeholder="Name *">
+                            <input  class="form__login__input_email" type="text" placeholder="Email *">
+                            <button class="form__login__button" type="submit">send
+                                <img src="./images/banner_button.svg">
+                            </button>
+                        </form>
+                        <div class="contact__line">
+
+                        </div>
+                    </div>
+                </section>
+
+                <div class="content__banner__navigation">
+                    <a href="#home" class="content__navigation__link">
+                        <span class="content__navigation__link__number">01</span> 
+                        <span>Home</span>
+                        <span class="content__navigation__line-active"></span>
+                    </a>
+                    <a href="#about" class="content__navigation__link">
+                        <span class="content__navigation__link__number">02</span>
+                        <span class="content__navigation__link__about">About</span>
+                        <span class="content__banner__navigation__line"></span>
+                    </a>
+                    </a>
+                    <a href="#services" class="content__navigation__link">
+                        <span class="content__navigation__link__number">
+                            03
+                        </span>
+                        <span class="content__navigation__link__services">
+                            Services
+                        </span>
+                        <span class="content__banner__navigation__line"></span>
+                    </a>
+                    </a>
+                    <a href="#contact" class="content__navigation__link">
+                        <span class="content__navigation__link__number">
+                            04
+                        </span>
+                        <span class="content__navigation__link__contact">
+                            Contact
+                        </span>
+                        <span class="content__banner__navigation__line"></span>
+                    </a>
+                    </a>
+                 </div>
 
             </main>
-          
-        <script type="text/javascript" src="build/js/buildScript.js"></script>
+        
+       
+        <!-- <script type="text/javascript" src="build/js/buildScript.js"></script> -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script type="text/javascript" src="js/main.js" async></script>
     </body>
-
 </html>
