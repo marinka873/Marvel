@@ -8,14 +8,29 @@
          url('../fonts/alata-v1-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-  /* Sofia-Pro */
+  /* Sofia-Pro Light*/
   @font-face{
     font-family: 'Sofia Pro';
     font-weight: 300;
     font-style: normal;
     src: local('Sofia Pro')
-         url(/font/SofiaProLight.woff2) format('woff2'),
-         url(/font/SofiaProUltraLight.woff) format('woff'),
-         url(/font/SofiaProRegular.woff2) format('woff2'),
-         url(/font/SofiaProRegular.woff) format('woff')
+         url(/font/SofiaProLight.woff) format('woff')
+  }
+
+  /*Sofia Pro Regular*/
+  @font-face{
+       font-family: 'Sofia Pro';
+       font-style: normal;
+       font-weight: normal;
+       src: local('Sofia Pro')
+            url(/font/SofiaProRegular.woff) format('woff')
+  }
+
+  /* Sofia Pro  Bold*/
+  @font-face{
+       font-family: 'Sofia Pro';
+       font-weight: bold;
+       font-style: normal;
+       src: local('Sofia Pro')
+            url(/font/SofiaProBold.woff)
   }

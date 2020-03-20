@@ -3,22 +3,27 @@
     <head lang="en">
         <title>Marvel Power Group</title>
         <link rel="stylesheet" type="text/css" href="../build/styles/styles.css"> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <meta charset="utf-8">
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     </head>
-    <body>
+    <body data-spy="scroll" data-target="content__banner__navigation" data-offset="270">
          <div class="header">
              <header class="header__menu">
-                <div class="main__content">
+                <div class="container">
                     <div class="header__wrapper">
                         <div class="header__logo">
                             <a class="header__logo__link" href="#home">
                                 <img src="./images/logo_Marvel.svg" alt="Marvel Power Group">
                             </a>
                         </div>
+                        <a href="#" class="btn__burger">
+                            <span></span>
+                            <span></span>
+                        </a>
                             <nav class="header__navbar">
-                                <ul class="header__navbar_menu">
+                                <ul class="header__navbar_menu ">
                                     <li class="navbar__menu__item ">
                                         <a  class="navbar__menu__link" href="#about">About</a>  
                                     </li>
@@ -30,60 +35,89 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="header__burger__menu">
-                                    <span class="header__burger__menu__line"></span>
-                                    <span class="header__burger__menu__line"></span>
-                            </div>
-                           
                         </div>
                      </div>
+                     
+                     <div class="header__navbar__menu__mobile">
+                        <div class="mobile__header__wrap">
+                            <div class="mobile__logo">
+                                <a href="#home" class="mobile__logo__link">
+                                    <img src="./images/mobile__logo.svg">
+                                </a>
+                             </div>
+                        </div>
+                       <nav class="mobile__menu">
+                           <ul class="mobile__menu__burger">
+                               <li class="mobile__menu__item">
+                                   <a href="#about">
+                                       About
+                                   </a>
+                               </li>
+                               <li class="mobile__menu__item">
+                                   <a href="#services">
+                                       Services
+                                   </a>
+                               </li>
+                               <li class="mobile__menu__item">
+                                   <a href="#contact">
+                                       Contact
+                                   </a>
+                               </li>
+                           </ul>
+                       </nav>
+                       <a class="button__mobile" href="#contact"> 
+                           contact us
+                           <img src="./images/banner_button.svg">
+                       </a>
+                   </div>
                 </header>
             </div>
             <main>
                 <section class="content__banner" id="home">
-                    <div class="content__banner__wrap">
+                    <div class="container">
                         <h1 class="content__banner__title">
                             Marvel Power Group
                         </h1>
-                        <p class="content__banner__discription">Marvel Power Group is a boutique consulting firm with a fresh,
+                        <p class="content__banner__description">Marvel Power Group is a boutique consulting firm with a fresh,
                              markets-based approach to value creation. We offer services to clients in energy,
                              water, manufacturing and transportation sectors.</p>
-                             <a class="content__banner__button" href="#">
+                             <a class="content__banner__button" href="#contact">
                                  contact us
                                 <img src="./images/banner_button.svg">
                             </a>
                             <div class="content__banner__line">
-
                             </div>
-                             <p class="content__banner__scroll">Scroll for more</p>
+                        <p class="content__banner__scroll">Scroll for more</p>
                     </div>
                 </section> 
                  <section class="container__about" id="about">
-                     <div class="container__about__wrapper">
+                     <div class="container">
                         <h2 class="container__about_title">About Us</h2>
                         <div class="container__about_title_underline">
                         </div>
                         <div class="container__about__flex">
-                            <img class="container__about__image" src="./images/city.jpg" alt="Marvel Power Group">
+                            <div class="container__about__image">
+                                <img src="./images/city.jpg" class="container__about__image" alt="Marvel Power Group">
+                            </div>
                             <div class="container__about__description">
                                 <p class="container__about__description__item">
                                     Our dynamic, solutions-oriented team brings decades 
                                     of relevant transactional, analytical and regulatory 
                                     experience to supporting our clients’ unique agendas. </p>
-                                   <p class="container__about__description__item2"> We are experienced practitioners who have run companies,
+                                <p class="container__about__description__item2"> We are experienced practitioners who have run companies,
                                     successfully originated and closed complex deals, advocated
                                     and negotiated favorable policy and advanced technologiscal 
                                     innovation and climate leadership. </p>
-                                    <p class="container__about__description__item3">We specialize in structuring balanced solutions for all 
+                                <p class="container__about__description__item3">We specialize in structuring balanced solutions for all 
                                         affected stakeholders and uncovering economic opportunities 
                                         in otherwise opaque environments.</p>
                                 </p>
                             </div>
                         </div>
                     </div>
-                </section> 
+                </section>
                 <section class="container__services" id="services">
-                    <div class="container__services__wrap">
+                    <div class="container">
                         <h2 class="container__services_title">Services</h2>
                         <div class="container__services_underline">
                         </div>
@@ -95,23 +129,10 @@
                             deep expertise to addressing these challenges.
                          </p>
                          <div class="container__services__group">
-                            <div class="container__services__group__title">
+                            <div class="container__services__box1">
                                 <h3 class="container__services__box__title">
                                     Enterprise Strategy
                                  </h3>
-                            </div>
-                            <div class="container__services__group__title1">
-                                <h3 class="container__services__box__title title__sevices">
-                                    Wholesale Power 
-                                 </h3>
-                            </div>
-                            <div class="container__services__group__title2">
-                                <h3 class="container__services__box__title">
-                                    Market Development
-                                </h3>
-                             </div>
-                            
-                            <div class="container__services__box1">
                                  <ul class="container__services__list">
                                     <li class="container__services__list__item">
                                         <span class="container__services__list__description">
@@ -133,37 +154,13 @@
                                             Reliability planning and reporting
                                         </span>
                                     </li>
+                                    <a href="#" class="container__services__button" ></a>
                                 </ul>
-                                <a href="#" class="container__services__button" ></a>
                              </div>
-                            
-                             <div class="container__services__box2">  
-                                 <ul class="container__services__list">
-                                     <li class="container__services__list__item">
-                                         <span class="container__services__list__description">
-                                            Commodity advisory and RFPs
-                                         </span>
-                                     </li>
-                                     <li class="container__services__list__item">
-                                         <span class="container__services__list__description">
-                                            Energy, capacity, REC, RIN, and LCFS placement
-                                         </span>
-                                     </li>
-                                     <li class="container__services__list__item">
-                                         <span class="container__services__list__description">
-                                            Enterprise PPA structuring
-                                         </span>
-                                     </li>
-                                     <li class="container__services__list__item">
-                                         <span class="container__services__list__description">
-                                            Contract extensions and re-packaging
-                                         </span>
-                                     </li>
-                                 </ul>
-                                 <a href="#" class="container__services__button"></a>
-                             </div>
-                            
                              <div class="container__services__box3">
+                                <h3 class="container__services__box__title title__sevices">
+                                    Wholesale Power 
+                                 </h3>
                                 <ul class="container__services__list">
                                     <li class="container__services__list__item">
                                         <span class="container__services__list__description">
@@ -185,11 +182,39 @@
                                             Partnership structuring
                                         </span>
                                     </li>
+                                    <a href="#" class="container__services__button" > </a>
                                 </ul>
-                                <a href="#" class="container__services__button" > </a>
                             </div>
+                             <div class="container__services__box2">  
+                                <h3 class="container__services__box__title">
+                                    Market Development
+                                </h3>
+                                 <ul class="container__services__list">
+                                     <li class="container__services__list__item">
+                                         <span class="container__services__list__description">
+                                            Commodity advisory and RFPs
+                                         </span>
+                                     </li>
+                                     <li class="container__services__list__item">
+                                         <span class="container__services__list__description">
+                                            Energy, capacity, REC, RIN, and LCFS placement
+                                         </span>
+                                     </li>
+                                     <li class="container__services__list__item">
+                                         <span class="container__services__list__description">
+                                            Enterprise PPA structuring
+                                         </span>
+                                     </li>
+                                     <li class="container__services__list__item">
+                                         <span class="container__services__list__description">
+                                            Contract extensions and re-packaging
+                                         </span>
+                                     </li>
+                                     <a href="#" class="container__services__button"></a>
+                                 </ul>
+                             </div>
                          </div>
-                        <p class="container__services__description container__services__description__bottom">
+                        <p class="container__services__description__bottom">
                             Our clients are time constrained and under-resourced. Agendas shift,
                             budgets move and priorities change. We understand. We are agile, creative
                             and immediately responsive to your various working styles, governance requirements and evolving needs. 
@@ -197,66 +222,64 @@
                     </div>
                 </section> 
                 <section class="container__contact" id="contact">
-                    <div class="container__contact__wrap">
-                            <h2 class="container__contact__title">Contact</h2>
-                            <div class="container__contact__title__underline">
-                            </div>
-                            <h3 class="container__contact__description">
-                                Stay in the loop 
-                                by getting on
-                                our mailing list</h3>       
-                                <div class="container__contact__info">
-                                    <h3 class="container__contact__info__text">Email us here:</h3>
-                                    <h3 class="container__contact__info__text_color">info@marvelpowergroup.com</h3>
+                    <div class="container">
+                        <div class="container__flex">
+                            <div class="container__contact__desc">
+                                <h2 class="container__contact__title">Contact</h2>
+                                <div class="container__contact__title__underline">
                                 </div>
-                        <form class="form__login">
-                            <input  class="form__login__input" type="text" placeholder="Name *">
-                            <input  class="form__login__input_email" type="text" placeholder="Email *">
-                            <button class="form__login__button" type="submit">send
-                                <img src="./images/banner_button.svg">
-                            </button>
-                        </form>
-                        <div class="contact__line">
-
+                                    <div class="container__contact__info">
+                                        <h3 class="container__contact__info__text">Email us here:</h3>
+                                        <h3 class="container__contact__info__text_color">
+                                            info@marvelpowergroup.com
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="container__contact__form">
+                                    <h3 class="container__contact__description">
+                                        Stay in the loop 
+                                        by getting on
+                                        our mailing list</h3>
+                                        <form class="form__login">
+                                            <input  class="form__login__input" type="text" placeholder="Name *">
+                                            <input  class="form__login__input_email" type="text" placeholder="Email *">
+                                            <button class="form__login__button" type="submit">send
+                                            <img src="./images/banner_button.svg">
+                                            </button>
+                                        </form>
+                                    </div>
+                                <div class="contact__line">
+                                </div>
+                            </div>
                         </div>
-                    </div>
                 </section>
-
-                <div class="content__banner__navigation">
-                    <a href="#home" class="content__navigation__link">
-                        <span class="content__navigation__link__number">01</span> 
-                        <span>Home</span>
-                        <span class="content__navigation__line-active"></span>
-                    </a>
-                    <a href="#about" class="content__navigation__link">
-                        <span class="content__navigation__link__number">02</span>
-                        <span class="content__navigation__link__about">About</span>
-                        <span class="content__banner__navigation__line"></span>
-                    </a>
-                    </a>
-                    <a href="#services" class="content__navigation__link">
-                        <span class="content__navigation__link__number">
-                            03
-                        </span>
-                        <span class="content__navigation__link__services">
-                            Services
-                        </span>
-                        <span class="content__banner__navigation__line"></span>
-                    </a>
-                    </a>
-                    <a href="#contact" class="content__navigation__link">
-                        <span class="content__navigation__link__number">
-                            04
-                        </span>
-                        <span class="content__navigation__link__contact">
-                            Contact
-                        </span>
-                        <span class="content__banner__navigation__line"></span>
-                    </a>
-                    </a>
-                 </div>
-
             </main>
+
+            <div class="content__banner__navigation" >
+                <a href="#home" class="content__navigation__home active">
+                    <span class="content__navigation__link__number">01</span> 
+                    <span class="content__navigation__link__home">Home</span>
+                    <span class="content__banner__navigation__line"></span>
+                </a>
+                <a href="#about" class="content__navigation__about">
+                    <span class="content__navigation__link__number">02</span>
+                    <span class="content__navigation__link__about">About</span>
+                    <span class="content__banner__navigation__line"></span>
+                </a>
+                </a>
+                <a href="#services" class="content__navigation__services">
+                    <span class="content__navigation__link__number">03</span>
+                    <span class="content__navigation__link__services"> Services</span>
+                    <span class="content__banner__navigation__line"></span>
+                </a>
+                </a>
+                <a href="#contact" class="content__navigation__contact">
+                    <span class="content__navigation__link__number">04</span>
+                    <span class="content__navigation__link__contact">Contact</span>
+                    <span class="content__banner__navigation__line"></span>
+                </a>
+                </a>
+             </div>
         
        
         <!-- <script type="text/javascript" src="build/js/buildScript.js"></script> -->

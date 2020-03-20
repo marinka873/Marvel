@@ -20,19 +20,27 @@
    @media(max-width: 1050px){
       @content
    }
-}
+};
+@mixin __992 {
+   @media(max-width: 992px){
+      @content
+   }
+};
 @mixin __768 {
    @media(max-width: 768px){
       @content
    }
 };
-
-@mixin __480 {
-   @media( max-width: 480px){
+@mixin __630{
+   @media(max-width:630px){
       @content
    }
 };
-
+@mixin __480 {
+   @media(max-width: 480px){
+      @content
+   }
+};
 @mixin __320 {
    @media (max-width:320px) {
       @content
